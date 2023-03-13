@@ -1,27 +1,52 @@
-.box-color
+body{
+    background-color: darkgrey;
+}
+h1{
+    color: black;
 
-
-div{
-    background-color: red;
+}
+h2{
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(94, 14, 45, 0.74);
+}
+.box-color{
     width: 250px;
     height: 250px;
     margin: 20px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-}  
-.color1{
-    background-color: blue;
-    width: 250px;
-    height: 250p
 }
-
-.color2{
-    
-    background-color: blueviolet;
-    width: 250px;
-    height: 250p
+span{
+    color: black;
+    font-size: 1.4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
-
+.color-azul{
+    background-color:blue;
+}
+.color-green{
+    background-color: green;
+}
+.color-violet{
+    background-color: violet;
+}
+.color-179-84-203{
+    background-color: rgb(179,84,203);
+}
+.color-0-255-255{
+    background-color: rgb(0, 255, 255);
+}
+.color-39-139-82{
+    background-color: rgb(39, 139, 82);
+}
+.color-EB-75-00{
+background-color: #EB7500 ;
+}
+.color-80-00-00{
+    background-color: #800000;
+}
+.color-00-DE-FF{
+    background-color: #00DEFF;
+}
