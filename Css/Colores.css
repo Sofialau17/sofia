@@ -1,6 +1,7 @@
 body{
     background-color: darkgrey;
 }
+
 h1{
     color: black;
 
@@ -9,6 +10,14 @@ h2{
     font-weight: 900;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgba(94, 14, 45, 0.74);
+}
+.box-color1{
+    flex-direction: row;
+    display: flex;
+}
+.box-colores{
+    flex-direction: row;
+    display: flex;
 }
 .box-color{
     width: 250px;
