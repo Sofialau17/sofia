@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+.table-box{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+table{
+    border-collapse: collapse;
+    font-size: 1.8em;
+    
+}
+th, td{
+    border: 1px solid rgb(24, 24, 24); 
+    padding: 10px 15px;
+}
+.img-check{
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+.col-style{
+    width: 150px;
+}
+.col-fam{
+    background-color: rgb(255, 120, 13);
+    color: white;
+    border: 0;
+}
+.logo-equis{
+    font-size: 1.4em;
+    color: brown;
+    font-weight: 900;
+    font-family: Tahoma, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
