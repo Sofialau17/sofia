@@ -1,5 +1,8 @@
+
 h1{
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 .table-box{
     display: flex;
@@ -15,6 +18,10 @@ th, td{
     border: 1px solid rgb(24, 24, 24); 
     padding: 10px 15px;
 }
+.por-mes{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(223, 215, 211);
+}
 .img-check{
     width: 50px;
     display: block;
@@ -23,11 +30,7 @@ th, td{
 .col-style{
     width: 150px;
 }
-.col-fam{
-    background-color: rgb(255, 120, 13);
-    color: white;
-    border: 0;
-}
+
 .logo-equis{
     font-size: 1.4em;
     color: brown;
@@ -35,4 +38,28 @@ th, td{
     font-family: Tahoma, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
+}
+
+.logo-wor{
+    background-color: rgb(223, 215, 211);
+}
+.col-fam{
+    background-color: rgb(187, 98, 25);
+    color: white;
+    border: 0;
+}
+.col-brom{
+    background-color: rgb(163, 89, 29);
+    color: white;
+    border: 0;
+}
+.col-gol{
+    background-color: rgb(134, 73, 24);
+    color: white;
+    border: 0;
+}
+.col-plati{
+    background-color: rgb(122, 60, 10);
+    color: white;
+    border: 0;
 }
