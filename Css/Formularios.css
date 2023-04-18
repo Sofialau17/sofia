@@ -1,0 +1,42 @@
+form{
+    font-family: Verdana,sans-serif;
+    border: 1px solid dodgerblue ;
+    width: 500px;
+    font-size: 1.2em;
+}
+.from-title{
+    width: 100%;
+    background-color: rgb(0, 153, 209);
+    height: 40px;
+}
+.txt-title{
+    font-size: 1em;
+    font-weight: 900;
+    color: white;
+    margin-left: 25px;
+    line-height: 40px;
+}
+.txt-inicio{
+     
+}
+.from-box{
+    padding: 15px 45px;
+}
+label{
+    display:block;
+    margin: 40px 0 15px 0;
+}
+input[type="text"], input[type="submit"]{
+    display:block;
+    font-size: 1.2em;
+}
+select{
+    cursor: pointer;
+    display: block;
+    font-size: 1.2em;
+
+}
+.from-bas{
+    display: flex;
+    justify-content: center;
+}
