@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.icon-style{
+    display: inline-block;
+    color: rgb(64, 64, 64);
+    padding: 25px 30px 0 30px;
+    font-size: 1em;
+    line-height: 2em;
+}
+.icon-style-nuevo{
+    display: inline-block;
+    color: rgb(64, 64, 64);
+    padding: 25px 30px 8px 30px;
+    font-size: 1em;
+    font-family: sans-serif;
+    line-height: 0.9em;
+}
+.texto-nuevo{
+   font-size:0.7em;
+   background-color: rgb(250, 142, 4);
+   padding: 0 6px;
+   border-radius:3px;
+   color: white;
+}
+ul{
+    width: 80%;
+    height: 90px;
+    text-align: center;
+    border-bottom:1px solid rgb(64, 64, 64.3);
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+.icon-style:hover, .icon-style-nuevo:hover{
+    cursor: pointer;
+    color: black;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(48, 48, 48);
+}
