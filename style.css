@@ -2,7 +2,7 @@ body{
     background-color: rgb(217, 216, 225);
 }
 h1{
-    text-align: center; color: blue; font-style: italic;
+    text-align: center; color: rgb(0, 0, 0); font-style: italic;
 }
 p{
    font-size: 400; font-family: 'Mynerve', cursive; color: brown;
