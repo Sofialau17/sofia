@@ -93,6 +93,10 @@ li:hover{
     .logo-hamburguer:hover{
         cursor: pointer;
     }
+    li {
+        margin: 0;
+        padding: 20px;
+    }
 }
 
     
