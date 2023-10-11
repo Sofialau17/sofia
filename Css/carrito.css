@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-content{
+    margin: 20px 20px 0 20px;
+    font-family: sans-serif;
+}
+.lbl-subtotal{
+    font-size: 1.7em;
+    font-weight: 600;
+}
+.box-proceder-pago{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(247, 231,8);
+    font-size: 1.6em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.box-img{
+   grid-area: derecha;
+}
+.box-info{
+    grid-area: izquierda;
+}
+.box-producto{
+    margin-top: 30px;
+    display: grid;
+    grid-template: "derecha izquierda"/
+                      5fr     6fr;
+}
+.book-title{
+    font-size: 1.8em;
+}
+.book-descripcion{
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.book-autor{
+    padding-top: 40px;
+    font-size: 1.4em;
+}
+.unidad{
+    font-size: 1.8em;
+    font-weight: 700;
+}
+.box-minus-plus{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2em;
+    width: 210px;
+    font-weight: 600;
+
+}
+.box-unidades{
+    border-left: 1px  rgb(48,48,48);
+    border-right: 1px rgb(48,48,48);
+}
+.box-minus, .box-unidades, .box-plus{
+    width:70px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(24,24,24);
+}
+.box-minus, .box-plus{
+    background-color: rgb(200, 200, 200);
+}
+.box-minus{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.box-plus{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
