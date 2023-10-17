@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="main-content">
-    <label class="lbl-subtotal">Subtotal $0</label>
+    <label class="lbl-subtotal">Subtotal $<span id="subTotal">0</span></label>
         <div class="box-proceder-pago">
-           <label>Proceder al pago (0 productos)</label>
+           <label>Proceder al pago (<span id="cantProductos">0 productos</span>)</label>
         </div>  
         <div class="box-producto">
             <div class="box-img"><img src="img/libro2.jpg" alt=""></div>
@@ -22,8 +22,7 @@
                 <br> <br>
                 <label class="book-autor">Autores:Jaime Lopera Gutiérrez y Marta Inés Bernal Trujillo.</label>
                 <br> <br>
-                <label class="precio">COP</label>
-                <label class="unidad">$50.000</label>
+                <label class="precio">COP<span id="precioUnidad" class="unidad">0</span></label>
             </div>
         </div>
         <div class="box-minus-plus">
@@ -34,7 +33,6 @@
 
             <div id="boxPlus" class="box-plus">
                     <i class="fa-solid fa-plus"></i></div>
-
         </div>
     </div>
     
