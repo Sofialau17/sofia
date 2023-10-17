@@ -21,7 +21,6 @@ boxPlus.addEventListener("click", function(){
        } 
     }
 });
-
 boxMinus.addEventListener("click", function(){
     let auxUnidades = parseInt(boxUnidades.innerHTML);
     if (auxUnidades > 0){

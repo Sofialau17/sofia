@@ -3,9 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+.box-img-ipad-mini{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-ipad-mini{
+    width:  713px;
+}
 .main-content{
+    width: 500px;
+    position: absolute;
+    top: 180px;
     margin: 20px 20px 0 20px;
     font-family: sans-serif;
+    
 }
 .lbl-subtotal{
     font-size: 1.7em;
@@ -33,6 +46,7 @@
     display: grid;
     grid-template: "derecha izquierda"/
                       5fr     6fr;
+    gap: 20px;
 }
 .book-title{
     font-size: 1.8em;
