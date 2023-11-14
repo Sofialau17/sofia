@@ -1,4 +1,29 @@
+class Automovil{
+    constructor (marca, modelo, precio, anyo, kilometros, ciudad, imagen){
+
+        this.marca = marca;
+        this.modelo = modelo;
+        this.precio = precio;
+        this.anyo = anyo;
+        this.kilometros = kilometros;
+        this.ciudad = ciudad;
+        this.imagen = imagen;
+        
+    }
+}
+let auto1 =new Automovil("MAZDA CX5 CARBON EDITION","", "$172.350.000", "2024", "0km", "Morato-Suba-Bogotá" ,"img/MazdaBlanco-1000x521.jpg");
+let auto2 =new Automovil("Ferrari Portofino","", "$1.350.000.000", "2019", "16.900km", "Ferrari colombia" ,"img/Rojito.webp");
+
+
 let boxProductos = document.getElementById("boxProductos");
+
+cargarAutomovil(auto1);
+cargarAutomovil(auto2);
+
+
+function cargarAutomovil(auto){
+
+
 
 /* Contenedor para los productos individuales */
 let boxProducto = document.createElement("div");
@@ -11,7 +36,7 @@ boxProducto.appendChild(boxImagen);
 boxImagen.setAttribute("class","box-imagen");
 let imagenProducto = document.createElement("img");
 boxImagen.appendChild(imagenProducto);
-imagenProducto.setAttribute("src","img/MazdaBlanco.jpg");
+imagenProducto.setAttribute("src",auto.imagen);
 imagenProducto.setAttribute("class","imagen-producto")
 
 /* Contenedor para la informacion */ 
@@ -19,28 +44,42 @@ let infoProducto = document.createElement("div");
 boxProducto.appendChild(infoProducto);
 infoProducto.setAttribute("class","box-info-producto");
 
+//Marca
 let marcaProducto = document.createElement("label");
 infoProducto.appendChild(marcaProducto);
-let nodoMarcaProducto = document.createTextNode("MAZDA CX5 CARBON EDITION");
+let nodoMarcaProducto = document.createTextNode(auto.marca);
 marcaProducto.appendChild(nodoMarcaProducto);
+marcaProducto.setAttribute("class", "marca-producto");
 
-let marcaProducto2 = document.createElement("div");
-infoProducto.appendChild(marcaProducto2);
-let nodoMarcaProducto2 = document.createTextNode("172.350.000");
-marcaProducto2.appendChild(nodoMarcaProducto2);
+//Precio
+let precioProducto = document.createElement("div");
+infoProducto.appendChild(precioProducto);
+let nodoPrecioProducto = document.createTextNode(auto.precio);
+precioProducto.appendChild(nodoPrecioProducto);
+precioProducto.setAttribute("class", "precio-producto");
 
-let marcaProducto3 = document.createElement("div");
-infoProducto.appendChild(marcaProducto3);
-let nodoMarcaProducto3 = document.createTextNode("2024");
-marcaProducto3.appendChild(nodoMarcaProducto3);
+//Año
+let anyoProducto = document.createElement("label");
+infoProducto.appendChild(anyoProducto);
+let nodoAnyoProducto = document.createTextNode(auto.anyo + "·");
+anyoProducto.appendChild(nodoAnyoProducto);
+anyoProducto.setAttribute("class", "anyo-producto");
 
-let marcaProducto4 = document.createElement("div");
-infoProducto.appendChild(marcaProducto4);
-let nodoMarcaProducto4 = document.createTextNode("0 Km");
-marcaProducto4.appendChild(nodoMarcaProducto4);
+//Kilometraje
+let kilometrajeProducto = document.createElement("label");
+infoProducto.appendChild(kilometrajeProducto);
+let nodoKilometrajeProducto = document.createTextNode(auto.kilometros +"·");
+kilometrajeProducto.appendChild(nodoKilometrajeProducto);
+kilometrajeProducto.setAttribute("class", "kilometraje");
 
-let marcaProducto5 = document.createElement("div");
-infoProducto.appendChild(marcaProducto5);
-let nodoMarcaProducto5 = document.createTextNode("Morato-Suba-Bogotá D.C.");
-marcaProducto5.appendChild(nodoMarcaProducto5);
+
+//Ciudad
+let ciudadProducto = document.createElement("label");
+infoProducto.appendChild(ciudadProducto);
+let nodoCiudadProducto = document.createTextNode(auto.ciudad);
+ciudadProducto.appendChild(nodoCiudadProducto);
+ciudadProducto.setAttribute("class", "ciudad");
+
+}
+
 
