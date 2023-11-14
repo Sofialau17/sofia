@@ -11,8 +11,8 @@ class Automovil{
         
     }
 }
-let auto1 =new Automovil("MAZDA CX5 CARBON EDITION","", "$172.350.000", "2024", "0km", "Morato-Suba-Bogotá" ,"img/MazdaBlanco-1000x521.jpg");
-let auto2 =new Automovil("Ferrari Portofino","", "$1.350.000.000", "2019", "16.900km", "Ferrari colombia" ,"img/Rojito.webp");
+let auto1 =new Automovil("Mazda cx5 Carbon Edition","", "$172.350.000", "2024", "0km", "Morato-Suba-Bogotá" ,"img/MazdaBlanco-1000x521.jpg");
+let auto2 =new Automovil("Ferrari Portofino","", "$1.350.000.000", "2019", "16.900km", "Ferrari Colombia" ,"img/Rojito.webp");
 
 
 let boxProductos = document.getElementById("boxProductos");
