@@ -78,9 +78,14 @@
     grid-area: box-info-producto;
     /* background-color: rgb(210, 210, 210, .8); */
 }
-.marca-producto, .modelo-producto{
-    line-height: 30px;
+.marca-producto{
+    line-height: 20px;
     font-size: .90em;
+    font-weight: 400;
+}
+.modelo-producto{
+    line-height: 20px;
+    font-size: .80em;
     font-weight: 400;
 }
 .anyo-producto, .kilometraje, .ciudad{
