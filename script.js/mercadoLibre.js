@@ -15,6 +15,8 @@ let auto1 =new Automovil("Mazda CX5 ","Carbon Edition", "$172.350.000", "2024", 
 let auto2 =new Automovil("Ferrari Portofino","", "$1.350.000.000", "2019", "16.900km", "Ferrari-Colombia" ,"img/Rojito.webp");
 let auto3 =new Automovil("Chevrolet Camaro", "", "$254.000.000", "2023", "0km", "Usaquén-Bogotá D.C", "img/Camaro.jpg");
 let auto4 =new Automovil("Bmw Cabriolet", "M4 3.0 M4 F83", "$265.000.000", "2018", "15.100km", "Cota-Cundinamarca", "img/bmw.webp");
+let auto5 =new Automovil("Mazda 3 2.0 ","Grand Touring Lx", "$80.000.000", "2020", "64.000 km ", "Mazurén - Suba - Bogotá D.C." ,"img/Mazda-negro.webp");
+
 
 let boxProductos = document.getElementById("boxProductos");
 
@@ -22,7 +24,28 @@ cargarAutomovil(auto1);
 cargarAutomovil(auto2);
 cargarAutomovil(auto3);
 cargarAutomovil(auto4);
+cargarAutomovil(auto5);
 
+window.addEventListener("keydown", (event) => {
+    let inputBusqueda = document.getElementById("inputBusqueda").value;
+    if(event.key == "Enter"){
+        boxProductos.innerHTML = "";
+        let inputBusquedaAux = inputBusqueda.toLowerCase();        
+        if(inputBusquedaAux == "mazda"){
+        cargarAutomovil(auto1);
+        cargarAutomovil(auto5);
+    }
+    else if(inputBusquedaAux == "ferrari"){
+        cargarAutomovil(auto2);
+    }
+    else if(inputBusquedaAux == "chevrolet"){
+        cargarAutomovil(auto3);
+    }
+    else if (inputBusquedaAux == "bmw"){
+        cargarAutomovil(auto4);
+    }
+ }
+});
 function cargarAutomovil(auto){
 
 
